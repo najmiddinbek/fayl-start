@@ -1,9 +1,4 @@
-'use client'
-
 import Link from 'next/link';
-import Aos from "aos";
-import "aos/dist/aos.css";
-import React, { useEffect } from 'react';
 import { AiOutlineEye } from 'react-icons/ai';
 import CountChortoq from "./MFY/CountChortoq"
 import BeshKapa from "./MFY/Beshkapa"
@@ -14,12 +9,9 @@ import { BsFillEnvelopeFill } from "react-icons/bs"
 
 
 export default function page() {
-    useEffect(() => {
-        Aos.init({ duration: 1500 });
-    }, []);
     return (
         <div className='admin_main_page_some_padding mt-10 max-w-[1400px] ml-auto mr-auto'>
-            <div data-aos="fade-down" className="flex justify-between mb-3 main_panel">
+            <div className="flex justify-between mb-3 main_panel">
                 <h1 className='page_text poppins text-3xl mb-4 font-bold'>Barcha MFY </h1>
                 <Link href={"/"} className="green asosiy_button py-3 px-10 button text-white rounded-md">
                     Orqaga
